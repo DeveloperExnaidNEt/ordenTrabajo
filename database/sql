@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS producto CASCADE;
+CREATE TABLE producto(
+	id BIGSERIAL PRIMARY KEY,	
+	name VARCHAR(255) NOT NULL,
+	description VARCHAR(255) NOT NULL,
+	price VARCHAR(80) NOT NULL UNIQUE,
+	image VARCHAR(255) NULL,	
+	is_available BOOLEAN NULL,	
+	created_at TIMESTAMP(0) NOT NULL,
+	updated_at TIMESTAMP(0) NOT NULL
+);
+
+
